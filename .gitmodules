@@ -1,0 +1,3 @@
+[submodule "contrib-prompt/external/garrett"]
+	path = contrib-prompt/external/garrett
+	url = https://github.com/chauncey-garrett/zsh-prompt-garrett.git
