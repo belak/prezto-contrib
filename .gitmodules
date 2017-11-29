@@ -1,3 +1,6 @@
 [submodule "contrib-prompt/external/garrett"]
 	path = contrib-prompt/external/garrett
 	url = https://github.com/chauncey-garrett/zsh-prompt-garrett.git
+[submodule "contrib-prompt/external/lean"]
+	path = contrib-prompt/external/lean
+	url = https://github.com/miekg/lean.git
