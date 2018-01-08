@@ -25,16 +25,28 @@ unset cache_file kubectl_command
 # Aliases
 #
 
-alias kc='kubectl'
+alias kb='kubectl'
 
-alias kca='kubectl apply'
-alias kcc='kubectl create'
-alias kcD='kubectl delete'
-alias kcd='kubectl describe'
-alias kce='kubectl exec'
-alias kcf='kubectl port-forward'
-alias kcg='kubectl get'
-alias kcl='kubectl logs'
-alias kcr='kubectl run'
+alias kba='kubectl apply'
+alias kbc='kubectl config'
+alias kbcg='kubectl config get-contexts'
+alias kbcu='kubectl config use-context'
+alias kbcv='kubectl config view'
+alias kbC='kubectl create'
+alias kbD='kubectl delete'
+alias kbd='kubectl describe'
+alias kbe='kubectl exec'
+alias kbf='kubectl port-forward'
+alias kbg='kubectl get'
+alias kbl='kubectl logs'
+alias kblf='kubectl logs --follow'
+alias kbr='kubectl run'
 
-alias kclf='kubectl logs --follow'
+alias wkb='watch -n 1 kubectl'
+
+kbn () {
+  kubectl config set-context $(kubectl config current-context) --namespace=$1
+}
+
+# Cluster name formatting
+zstyle ':prezto:module:contrib-kubernetes' prod-clusters-default '^(?!.*dev).*$'
