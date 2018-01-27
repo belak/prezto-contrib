@@ -14,6 +14,8 @@ use these modules. Simply do the following:
 ```
 cd $ZPREZTODIR
 git clone https://github.com/belak/prezto-contrib contrib
+git submodule init
+git submodule update
 ```
 
 After the repo is cloned, you can load modules in the same way you'd load a
