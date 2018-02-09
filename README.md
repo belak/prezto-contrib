@@ -14,6 +14,7 @@ use these modules. Simply do the following:
 ```
 cd $ZPREZTODIR
 git clone https://github.com/belak/prezto-contrib contrib
+cd contrib
 git submodule init
 git submodule update
 ```
