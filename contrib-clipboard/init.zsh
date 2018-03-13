@@ -37,7 +37,7 @@ done
 
 function putbuffer {
   if [[ "$OSTYPE" == darwin* ]]; then
-    zle copy-region-as-kill "$(pbcopy)"
+    zle copy-region-as-kill "$(pbpaste)"
   elif [[ "$OSTYPE" == cygwin* ]]; then
     zle copy-region-as-kill "$(cat /dev/clipboard)"
   elif (( $+commands[xclip] )); then
