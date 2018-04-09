@@ -114,13 +114,6 @@ function prompt_belak_setup {
   unsetopt XTRACE KSH_ARRAYS
   prompt_opts=(cr percent sp subst)
 
- # Load required functions.
-  autoload -Uz add-zsh-hook
-  autoload -Uz async && async
-
-  # Add hook for calling git-info before each command.
-  add-zsh-hook precmd prompt_belak_precmd
-
   # Set editor-info parameters.
   zstyle ':prezto:module:editor:info:completing' format '%B%F{7}...%f%b'
 
