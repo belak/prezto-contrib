@@ -45,18 +45,31 @@ function prompt_sorin_contrib_async_callback {
       _prompt_k8s="%B("
 
       zstyle -s ':prezto:module:contrib-kubernetes' prod-clusters prod_regexp
-      if [[ -z "$prod_regexp" ]]
-      then
-        zstyle -s ':prezto:module:contrib-kubernetes' prod-clusters-default prod_regexp
-      fi
 
-      if [[ -n "$(echo "$_k8s_cluster" | grep -P "$prod_regexp")" ]]
+      if [ -n "$prod_regexp" ]
       then
-        _prompt_k8s+='%F{1}'
+        if [[ -n "$(echo "$_k8s_cluster" | grep -E "$prod_regexp")" ]]
+        then
+            _prompt_k8s+="%F{1}"
+        else
+            _prompt_k8s+="%F{7}"
+        fi
       else
-        _prompt_k8s+='%F{7}'
-      fi
-        _prompt_k8s+="$_k8s_cluster%f"
+        zstyle -s ':prezto:module:contrib-kubernetes' dev-clusters dev_regexp
+        if [ -z "$dev_regexp" ]
+        then
+          zstyle -s ':prezto:module:contrib-kubernetes' dev-clusters-default dev_regexp
+        fi
+
+        if [[ -n "$(echo "$_k8s_cluster" | grep -E "$dev_regexp")" ]]
+           then
+               _prompt_k8s+="%F{7}"
+           else
+               _prompt_k8s+="%F{1}"
+           fi
+        fi
+
+      _prompt_k8s+="$_k8s_cluster%f"
       if [[ -n "$_k8s_ns" ]]
       then
         _prompt_k8s+="|%F{4}$_k8s_ns%p%f"

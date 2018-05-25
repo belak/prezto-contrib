@@ -48,5 +48,5 @@ kbn () {
   kubectl config set-context $(kubectl config current-context) --namespace=$1
 }
 
-# Cluster name formatting
-zstyle ':prezto:module:contrib-kubernetes' prod-clusters-default '^(?!.*dev).*$'
+# name formatting
+zstyle ':prezto:module:contrib-kubernetes' dev-clusters-default 'dev'
