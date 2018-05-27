@@ -46,7 +46,7 @@ function prompt_sorin_contrib_async_callback {
 
       zstyle -s ':prezto:module:contrib-kubernetes' prod-clusters prod_regexp
 
-      if [ -n "$prod_regexp" ]
+      if [[ -n "$prod_regexp" ]]
       then
         if [[ -n "$(echo "$_k8s_cluster" | grep -E "$prod_regexp")" ]]
         then
@@ -56,7 +56,7 @@ function prompt_sorin_contrib_async_callback {
         fi
       else
         zstyle -s ':prezto:module:contrib-kubernetes' dev-clusters dev_regexp
-        if [ -z "$dev_regexp" ]
+        if [[ -z "$dev_regexp" ]]
         then
           zstyle -s ':prezto:module:contrib-kubernetes' dev-clusters-default dev_regexp
         fi
