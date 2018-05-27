@@ -7,3 +7,6 @@
 [submodule "contrib-prompt/external/spaceship"]
 	path = contrib-prompt/external/spaceship
 	url = https://github.com/denysdovhan/spaceship-zsh-theme.git
+[submodule "alias-tips/external"]
+	path = alias-tips/external
+	url = https://github.com/djui/alias-tips.git
