@@ -31,41 +31,41 @@ alias zyp="${_zypper_frontend}"
 # Cleans the cache.
 alias zypc="${_zypper_frontend} clean -a"                     
 # Installs package(s).
-alias zypi="${_zypper_sudo}${_zypper_frontend} install"                      
+alias zyppi="${_zypper_sudo}${_zypper_frontend} install"                      
 # Clean packages cache.
-alias zypl="${_zypper_sudo}${_zypper_frontend} clean"                            
+alias zyppl="${_zypper_sudo}${_zypper_frontend} clean"                            
 # Displays package information.
-alias zypq="${_zypper_frontend} info"                              
+alias zypps="${_zypper_frontend} info"                              
 # Removes package(s).
-alias zypx="${_zypper_sudo}${_zypper_frontend} remove"                      
+alias zyppx="${_zypper_sudo}${_zypper_frontend} remove"                      
 # Searches a package.
-alias zyps="${_zypper_frontend} search"                            
+alias zypps="${_zypper_frontend} search"                            
 # Verifies Dependencies.
-alias zypv="${_zypper_frontend} verify"                          
+alias _zyppv="${_zypper_frontend} verify"                          
 # Updates package(s).
-alias zypu="${_zypper_sudo}${_zypper_frontend} update"                           
-# Refresh repositories.
-alias zypre="${_zypper_sudo}${_zypper_frontend} refresh"                          
+alias zyppu="${_zypper_sudo}${_zypper_frontend} update"                           
+# Remove a repository.
+alias zyper="${_zypper_sudo}${_zypper_frontend} refresh"                          
 # Dist Upgrade.
-alias zypU="${_zypper_sudo}${_zypper_frontend} dist-upgrade"                          
+alias zypdU="${_zypper_sudo}${_zypper_frontend} dist-upgrade"                          
 # Dist Upgrade, download only without install.
-alias zypUd="${_zypper_sudo}${_zypper_frontend} dist-upgrade --download-only"         
+alias zypdUd="${_zypper_sudo}${_zypper_frontend} dist-upgrade --download-only"         
 # Dist Upgrade without refreshing repositories.
-alias zypUn="${_zypper_sudo}${_zypper_frontend} --no-refresh"                
+alias zypUpn="${_zypper_sudo}${_zypper_frontend} --no-refresh"                
 # Lists patche(s).
-alias zyplp="${_zypper_sudo}${_zypper_frontend} list-patches"                
+alias zyptl="${_zypper_sudo}${_zypper_frontend} list-patches"                
 # Applies patch.
-alias zypap="${_zypper_sudo}${_zypper_frontend} patch"                
+alias zypta="${_zypper_sudo}${_zypper_frontend} patch"                
 # Applies all patches.
-alias zypaP="${_zypper_sudo}${_zypper_frontend} patches"                
+alias zyptA="${_zypper_sudo}${_zypper_frontend} patches"                
 # Removes repository.
-alias zypR="${_zypper_sudo}${_zypper_frontend} removerepo"
+alias zyper="${_zypper_sudo}${_zypper_frontend} removerepo"
 # Adds repository.
-alias zypar="${_zypper_sudo}${_zypper_frontend} addrepo"
+alias zypea="${_zypper_sudo}${_zypper_frontend} addrepo"
 # Locks package(s).
-alias zypal="${_zypper_sudo}${_zypper_frontend} addlock"
+alias zypl="${_zypper_sudo}${_zypper_frontend} addlock"
 # Removes lock on package(s).
-alias zyprl="${_zypper_sudo}${_zypper_frontend} removelock"
+alias zyplr="${_zypper_sudo}${_zypper_frontend} removelock"
 
 
 
