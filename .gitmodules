@@ -10,3 +10,6 @@
 [submodule "alias-tips/external"]
 	path = alias-tips/external
 	url = https://github.com/djui/alias-tips.git
+[submodule "fzf-marks"]
+	path = fzf-marks
+	url = https://github.com/urbainvaes/fzf-marks
