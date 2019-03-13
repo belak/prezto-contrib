@@ -13,3 +13,6 @@
 [submodule "enhancd/external"]
 	path = enhancd/external
 	url = https://github.com/b4b4r07/enhancd.git
+[submodule "contrib-prompt/external/powerlevel10k"]
+	path = contrib-prompt/external/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
