@@ -13,3 +13,6 @@
 [submodule "enhancd/external"]
 	path = enhancd/external
 	url = https://github.com/b4b4r07/enhancd.git
+[submodule "tmux-xpanes/external"]
+	path = tmux-xpanes/external
+	url = https://github.com/greymd/tmux-xpanes.git
