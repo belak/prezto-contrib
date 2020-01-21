@@ -16,3 +16,6 @@
 [submodule "tmux-xpanes/external"]
 	path = tmux-xpanes/external
 	url = https://github.com/greymd/tmux-xpanes.git
+[submodule "fzy/external"]
+	path = fzy/external
+	url = https://github.com/aperezdc/zsh-fzy.git
