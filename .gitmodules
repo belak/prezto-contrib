@@ -19,3 +19,6 @@
 [submodule "fzy/external"]
 	path = fzy/external
 	url = https://github.com/aperezdc/zsh-fzy.git
+[submodule "lazy-load"]
+	path = lazy-load
+	url = https://github.com/xcv58/zsh-lazy-load.git
