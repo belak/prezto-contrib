@@ -19,7 +19,7 @@ To specify list of one or more visual filters add the following line to
 *zpreztorc*:
 
 ```sh
-zstyle ":prezto:module:enhancd" command "fzf:fzy:peco"
+zstyle ":prezto:module:enhancd" filter "fzf:fzy:peco"
 ```
 
 Available options include [fzy][2], [fzf][3], [peco][4] etc.
