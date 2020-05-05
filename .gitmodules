@@ -19,3 +19,6 @@
 [submodule "fzy/external"]
 	path = fzy/external
 	url = https://github.com/aperezdc/zsh-fzy.git
+[submodule "history-search-multi-word/external"]
+	path = history-search-multi-word/external
+	url = https://github.com/zdharma/history-search-multi-word.git
