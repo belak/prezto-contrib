@@ -31,13 +31,6 @@ To specify a command to invoke [enhancd][1] add the following line to
 zstyle ":prezto:module:enhancd" command "cd"
 ```
 
-To set whether to show the full path or not when executing `..` add the
-following line to *zpreztorc*
-
-```sh
-zstyle ":prezto:module:enhancd" show-fullpath "ENHANCD_DOT_SHOW_FULLPATH"
-```
-
 Troubleshooting
 ---------------
 
